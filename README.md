@@ -1,7 +1,7 @@
 [![Build Status](https://scrutinizer-ci.com/g/gplcart/chart/badges/build.png?b=master)](https://scrutinizer-ci.com/g/gplcart/chart/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gplcart/chart/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/gplcart/chart/?branch=master)
 
-Chart is a [GPL Cart](https://github.com/gplcart/gplcart) module that allows to displays various data using powerful [Google Chart library](https://developers.google.com/chart)
+Chart is a [GPL Cart](https://github.com/gplcart/gplcart) module that allows to display various data using powerful [Google Chart library](https://developers.google.com/chart) within admin section.
 
 Supported modules:
 
