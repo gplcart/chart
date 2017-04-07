@@ -9,15 +9,16 @@ Supported modules:
 
 **How it works**
 
-When enabled the module searches for divs with `data-chart-id` and `data-chart-source` attributes. The first attribute must contain a handler ID which is a name of the handler file `system/modules/chart/js/handlers/<handler ID>.js`. The handler file is loaded dynamically and responsible for drawing chart using JSON data from `data-chart-source` attribute.
+When enabled the module searches for divs with `data-chart-id` and `data-chart-source` attributes. The first attribute must contain a handler ID, second - JSON string with data to draw the chart.
 
-**Custom charts**
-
-    <div class="my-chart" data-chart-id="my_chart" data-chart-source='{"key":"value"}'>
-	...
+    <div data-chart-id="my_chart" data-chart-source='{"key":"value"}'>
+	...Your chart here
     </div>
 
-Create handler in `system/modules/chart/js/handlers/my_chart.js`, add some code. See for instance existing handlers and [official docs](https://developers.google.com/chart/interactive/docs/quick_start)
+**Creating custom charts**
+
+Basically you'll need two things - add 2 required attributes to your chart container (see above) and write corresponding handler to draw a chart using data from `data-chart-source` attribute.
+To write the handler, create javascript file `HANDLER_ID_FROM_ATTRIBUTE`.js, add some code (see existing handlers, [read docs](https://developers.google.com/chart/interactive/docs/quick_start)) and put it into `system/modules/chart/js/handlers`
 
 
 **Installation**
