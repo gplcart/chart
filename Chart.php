@@ -26,22 +26,6 @@ class Chart extends Module
     }
 
     /**
-     * Module info
-     * @return array
-     */
-    public function info()
-    {
-        return array(
-            'name' => 'Chart',
-            'version' => '1.0.0-dev',
-            'description' => 'Allows to display various data using powerful Google Chart library',
-            'author' => 'Iurii Makukh ',
-            'core' => '1.x',
-            'license' => 'GPL-3.0+'
-        );
-    }
-
-    /**
      * Implements hook "construct.controller.backend"
      * @param \gplcart\core\controllers\backend\Controller $controller
      */

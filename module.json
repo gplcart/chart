@@ -1,0 +1,8 @@
+{
+    "name": "Chart",
+    "version": "1.0.0-dev",
+    "description": "Allows to display various data using powerful Google Chart library",
+    "author": "Iurii Makukh ",
+    "core": "1.x",
+    "license": "GPL-3.0+"
+}
