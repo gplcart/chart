@@ -31,7 +31,6 @@ class Chart extends Module
      */
     public function hookConstructControllerBackend($controller)
     {
-        // Scan JS handles
         $handlers = array();
         foreach (glob(__DIR__ . '/js/handlers/*.js') as $file) {
             $handlers[] = pathinfo($file, PATHINFO_FILENAME);
