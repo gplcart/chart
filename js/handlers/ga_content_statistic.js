@@ -1,5 +1,5 @@
-/* global window, GplCart, jQuery, google */
-(function (window, GplCart, $, google) {
+/* global window, Gplcart, jQuery, google */
+(function (window, Gplcart, $, google) {
 
     "use strict";
 
@@ -33,8 +33,8 @@
 
             var data = [
                 ['', ''],
-                [GplCart.text('Views'), parseInt(source[0][0])],
-                [GplCart.text('Unique visits'), parseInt(source[0][1])]
+                [Gplcart.text('Views'), parseInt(source[0][0])],
+                [Gplcart.text('Unique visits'), parseInt(source[0][1])]
             ];
 
             options = {
@@ -51,4 +51,4 @@
         }
     };
 
-})(window, GplCart, jQuery, google);
+})(window, Gplcart, jQuery, google);

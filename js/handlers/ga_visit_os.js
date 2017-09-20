@@ -1,5 +1,5 @@
-/* global window, GplCart, jQuery, google */
-(function (window, GplCart, $, google) {
+/* global window, Gplcart, jQuery, google */
+(function (window, Gplcart, $, google) {
 
     "use strict";
 
@@ -31,7 +31,7 @@
 
         if (!$.isEmptyObject(source)) {
 
-            data = [[GplCart.text('OS'), GplCart.text('Visits')]];
+            data = [[Gplcart.text('OS'), Gplcart.text('Visits')]];
 
             for (var i in source) {
                 data.push([source[i][0], parseInt(source[i][1])]);
@@ -51,4 +51,4 @@
         }
     };
 
-})(window, GplCart, jQuery, google);
+})(window, Gplcart, jQuery, google);

@@ -1,5 +1,5 @@
-/* global GplCart, jQuery, google */
-(function (GplCart, $) {
+/* global Gplcart, jQuery, google */
+(function (Gplcart, $) {
 
     "use strict";
 
@@ -7,7 +7,7 @@
      * Draw charts on the page
      * @returns {undefined}
      */
-    GplCart.onload.drawCharts = function () {
+    Gplcart.onload.drawCharts = function () {
         var charts = $('[data-chart-id][data-chart-source]');
         if (charts.size() && (typeof google === 'undefined' || typeof google.charts === 'undefined')) {
             $.getScript('https://www.gstatic.com/charts/loader.js', function () {
@@ -28,10 +28,10 @@
         var id;
         charts.each(function (i, el) {
             id = $(el).data('chart-id');
-            if ($.inArray(id, GplCart.settings.chart.handlers) !== -1) {
-                $.getScript(GplCart.settings.base + 'system/modules/chart/js/handlers/' + id + '.js', function () {});
+            if ($.inArray(id, Gplcart.settings.chart.handlers) !== -1) {
+                $.getScript(Gplcart.settings.base + 'system/modules/chart/js/handlers/' + id + '.js', function () {});
             }
         });
     };
 
-})(GplCart, jQuery);
+})(Gplcart, jQuery);

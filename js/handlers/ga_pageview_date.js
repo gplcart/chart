@@ -1,5 +1,5 @@
-/* global window, GplCart, jQuery, google */
-(function (window, GplCart, $, google) {
+/* global window, Gplcart, jQuery, google */
+(function (window, Gplcart, $, google) {
 
     "use strict";
 
@@ -29,7 +29,7 @@
         var container = $('[data-chart-id="ga_pageview_date"]');
         var settings = container.data('chart-settings');
         var source = container.data('chart-source');
-        var data = [[GplCart.text('Page views'), GplCart.text('Visits')]];
+        var data = [[Gplcart.text('Page views'), Gplcart.text('Visits')]];
 
         for (var i in source) {
 
@@ -56,4 +56,4 @@
         chart.draw(google.visualization.arrayToDataTable(data), options);
     };
 
-})(window, GplCart, jQuery, google);
+})(window, Gplcart, jQuery, google);
