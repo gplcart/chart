@@ -9,7 +9,8 @@
 
 namespace gplcart\modules\chart;
 
-use gplcart\core\Module;
+use gplcart\core\Module,
+    gplcart\core\Config;
 
 /**
  * Main class for Chart module
@@ -18,11 +19,11 @@ class Chart extends Module
 {
 
     /**
-     * Constructor
+     * @param Config $config
      */
-    public function __construct()
+    public function __construct(Config $config)
     {
-        parent::__construct();
+        parent::__construct($config);
     }
 
     /**
