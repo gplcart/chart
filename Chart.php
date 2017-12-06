@@ -9,22 +9,11 @@
 
 namespace gplcart\modules\chart;
 
-use gplcart\core\Module,
-    gplcart\core\Config;
-
 /**
  * Main class for Chart module
  */
-class Chart extends Module
+class Chart
 {
-
-    /**
-     * @param Config $config
-     */
-    public function __construct(Config $config)
-    {
-        parent::__construct($config);
-    }
 
     /**
      * Implements hook "construct.controller.backend"
