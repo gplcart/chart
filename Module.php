@@ -12,7 +12,7 @@ namespace gplcart\modules\chart;
 /**
  * Main class for Chart module
  */
-class Chart
+class Module
 {
 
     /**
