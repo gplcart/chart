@@ -25,6 +25,20 @@ class Module
     }
 
     /**
+     * Returns an array of chart handlers
+     * @return array
+     */
+    public function getHandlers()
+    {
+        $handlers = array();
+        foreach (glob(__DIR__ . '/js/handlers/*.js') as $file) {
+            $handlers[] = pathinfo($file, PATHINFO_FILENAME);
+        }
+
+        return $handlers;
+    }
+
+    /**
      * Sets module specific assets
      * @param \gplcart\core\controllers\backend\Controller $controller
      */
@@ -37,20 +51,6 @@ class Module
                 $controller->setJsSettings('chart', array('handlers' => $handlers));
             }
         }
-    }
-
-    /**
-     * Returns an array of chart handlers
-     * @return array
-     */
-    public function getHandlers()
-    {
-        $handlers = array();
-        foreach (glob(__DIR__ . '/js/handlers/*.js') as $file) {
-            $handlers[] = pathinfo($file, PATHINFO_FILENAME);
-        }
-
-        return $handlers;
     }
 
 }
