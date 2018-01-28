@@ -1,12 +1,19 @@
 {
-    "name": "gplcart/chart",
-    "type": "gplcart-module",
-    "description": "Allows to display various data using powerful Google Chart library",
-    "keywords": ["gplcart", "ecommerce", "shopping cart", "gplcart module", "php", "chart"],
-    "license": "GPL-3.0+",
-    "require": {
-        "gplcart/composer-module-installer": "*"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+  "name": "gplcart/chart",
+  "type": "gplcart-module",
+  "description": "Allows to display various data using powerful Google Chart library",
+  "keywords": [
+    "gplcart",
+    "ecommerce",
+    "shopping cart",
+    "gplcart module",
+    "php",
+    "chart"
+  ],
+  "license": "GPL-3.0-or-later",
+  "require": {
+    "gplcart/composer-module-installer": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
